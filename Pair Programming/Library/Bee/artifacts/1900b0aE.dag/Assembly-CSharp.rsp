@@ -118,6 +118,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -375,8 +376,12 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CoinPickups.cs"
 "Assets/Scripts/CratePickups.cs"
+"Assets/Scripts/DamageManager.cs"
 "Assets/Scripts/EnemyMove.cs"
+"Assets/Scripts/GameExitScript.cs"
+"Assets/Scripts/HealthManager.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/SceneManagerScript.cs"
 "Assets/Scripts/ScoreManager.cs"
 -langversion:9.0
 

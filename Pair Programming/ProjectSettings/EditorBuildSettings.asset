@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DiedLol.unity
+    guid: ba06987d063103e498fd07e7253730f7
+  - enabled: 1
+    path: Assets/Scenes/GG.unity
+    guid: ddbd48825d222c440ab78eb60b8b8643
   m_configObjects: {}
