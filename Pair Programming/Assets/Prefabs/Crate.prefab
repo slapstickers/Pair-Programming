@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6172215942920916306}
   - component: {fileID: 6667858442290303329}
   - component: {fileID: 7211710782116922660}
-  - component: {fileID: 7705215533976271954}
+  - component: {fileID: 781628403576745261}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6667858442290303329
 SpriteRenderer:
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crateValue: 1000
---- !u!61 &7705215533976271954
+  cameraController: {fileID: 0}
+--- !u!61 &781628403576745261
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

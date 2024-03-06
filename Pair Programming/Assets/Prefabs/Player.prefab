@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1921330387177013401}
+  - component: {fileID: 4866344542888786875}
+  - component: {fileID: 5997822760601050482}
   - component: {fileID: 2028637875499825115}
   - component: {fileID: 242555187494300461}
-  - component: {fileID: 4866344542888786875}
   - component: {fileID: 2909830636048802003}
   - component: {fileID: 648897895524467643}
-  - component: {fileID: 5997822760601050482}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -37,6 +37,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4866344542888786875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973559343469946879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45142a0089337074789124fc5345ea71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  jumpPower: 40
+  castDistance: 0.73
+  boxSize: {x: 1.13, y: 0.26}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &5997822760601050482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973559343469946879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b7c062e21953a488c47ae8351ad814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 3
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &2028637875499825115
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -110,25 +146,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4866344542888786875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8973559343469946879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45142a0089337074789124fc5345ea71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 6
-  jumpPower: 40
-  castDistance: 0.73
-  boxSize: {x: 1.13, y: 0.26}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!50 &2909830636048802003
 Rigidbody2D:
   serializedVersion: 4
@@ -201,20 +218,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.70197916, y: 1.0160022}
   m_EdgeRadius: 0
---- !u!114 &5997822760601050482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8973559343469946879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29b7c062e21953a488c47ae8351ad814, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: 3
-  hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
