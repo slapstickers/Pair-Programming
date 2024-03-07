@@ -16,6 +16,7 @@ public class CratePickups : MonoBehaviour
             cameraController.followPlayer = false;
             CameraController.instance.ChangeDirection();
             Destroy(barrier);
+            CameraController.instance.ChangeMusic();
         }
     }
 }

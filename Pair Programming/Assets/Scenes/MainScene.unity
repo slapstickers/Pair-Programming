@@ -1069,9 +1069,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d087c5f3e40afb4f929d74221365fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicPlayer: {fileID: 519420034}
   followPlayer: 0
   scrollSpeed: 0.0025
   scrollDirection: 1
+  fastSong: {fileID: 8300000, guid: 3472212bb5cb55f45a0d12523d9ce69c, type: 3}
   player: {fileID: 4790921094738712072}
 --- !u!82 &519420034
 AudioSource:
