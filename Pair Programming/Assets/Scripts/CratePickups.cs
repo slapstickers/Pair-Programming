@@ -14,9 +14,9 @@ public class CratePickups : MonoBehaviour
             Destroy(gameObject);
             ScoreManager.instance.AddPoints(crateValue);
             cameraController.followPlayer = false;
-            CameraController.instance.ChangeDirection();
+            //CameraController.instance.ChangeDirection();
+            cameraController.ChangeDirection();
             Destroy(barrier);
-            CameraController.instance.ChangeMusic();
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinPickups : MonoBehaviour
 {
-    public int coinValue;
+    public static int coinValue = 10;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")

@@ -17,12 +17,15 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        scoreText.text = "Score: " + score.ToString();
+        //scoreText.text = "Score: " + score.ToString();
+        scoreText.text = $"Score: {score}";
     }
 
     public void AddPoints(int points)
     {
         score = score + points;
-        scoreText.text = "Score: " + score.ToString();
+        //scoreText.text = "Score: " + score.ToString();
+        scoreText.text = $"Score: {score}";
+        //Changed to use String Interpolation for both ScoreText updates lines. Removes additional function call of ToString().
     }
 }
